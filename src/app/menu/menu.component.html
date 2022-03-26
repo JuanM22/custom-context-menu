@@ -1,0 +1,8 @@
+<div id="menuContainer" [class]="theme" [style]="menuPosition" *ngIf="data.icons.length > 1 && data.icons.length < 7"
+    (mousemove)="moveCircleInside($event);" (mouseout)="resetCursorPosition($event);">
+    <div id="menuInsideCircle" [style]="insideCircleStyle"></div>
+    <div *ngFor="let icon of data.icons; let i = index" [class]="prefix + 'sector'+ (i + 1)" [title]="icon.title"
+        [id]="icon.title">
+        <i [class]="icon.iconClass"></i>
+    </div>
+</div>

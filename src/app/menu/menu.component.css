@@ -1,0 +1,343 @@
+/* Variables */
+.menu-light-theme {
+    --icon-background         : #e5e2e2;
+    --circle-inside-background: #202020;
+    --circle-inside-gradient  : beige;
+    --icon-one-color          : #fc0303;
+    --icon-two-color          : #fc9403;
+    --icon-three-color        : #7c02a1;
+    --icon-four-color         : #035efc;
+    --icon-five-color         : rgb(19, 12, 12);
+    --icon-six-color          : #a70478;
+    box-shadow                : 10px 7px 10px #202020;
+}
+
+.menu-dark-theme {
+    --icon-background         : #202020;
+    --circle-inside-background: #e5e2e2;
+    --circle-inside-gradient  : navy;
+    --icon-one-color          : #fcb103;
+    --icon-two-color          : #62fc03;
+    --icon-three-color        : #03fc7b;
+    --icon-four-color         : #035afc;
+    --icon-five-color         : #8003fc;
+    --icon-six-color          : #fc03b5;
+    box-shadow                : 10px 7px 10px #3a3a3a;
+}
+
+
+/* General */
+div[class*="menu"] {
+    width        : 5em;
+    height       : 5em;
+    border-radius: 35%;
+    display      : flex;
+    flex-wrap    : wrap;
+    position     : absolute;
+}
+
+i {
+    font-size: 15px;
+}
+
+#menuInsideCircle {
+    width        : 2.2em;
+    height       : 2.2em;
+    border-radius: 50%;
+    background   : radial-gradient(circle at center, var(--circle-inside-gradient) 5%, var(--circle-inside-background) 45%);
+    border       : 1px rgb(109, 107, 107) inset;
+    position     : absolute;
+    top          : 30%;
+    left         : 28%;
+    z-index      : 999;
+}
+
+div[class*="sector"] {
+    background-color: var(--icon-background);
+}
+
+div[class*="sector"]:hover {
+    filter: invert(100%);
+}
+
+/* -------------------------------------------------- */
+
+/* Two actions menu */
+.twosector1 {
+    width                    : 2.5em;
+    height                   : 5em;
+    border-top-left-radius   : 2.5em;
+    border-bottom-left-radius: 2.5em;
+}
+
+.twosector1 i {
+    top        : 40%;
+    margin-left: 15%;
+    position   : relative;
+    color      : var(--icon-one-color);
+}
+
+.twosector2 {
+    width                     : 2.5em;
+    height                    : 5em;
+    border-top-right-radius   : 2.5em;
+    border-bottom-right-radius: 2.5em;
+}
+
+.twosector2 i {
+    top         : 40%;
+    float       : right;
+    margin-right: 15%;
+    position    : relative;
+    color       : var(--icon-two-color);
+}
+
+/* Three actions menu */
+
+.threesector1 {
+    width                 : 2.5em;
+    height                : 2.5em;
+    border-top-left-radius: 5em;
+
+}
+
+.threesector1 i {
+    top        : 30%;
+    margin-left: 30%;
+    position   : relative;
+    color      : var(--icon-one-color);
+}
+
+.threesector2 {
+    width                  : 2.5em;
+    height                 : 2.5em;
+    border-top-right-radius: 5em;
+    background-color       : var(--icon-background);
+}
+
+.threesector2 i {
+    top         : 30%;
+    margin-right: 30%;
+    float       : right;
+    color       : var(--icon-two-color);
+    position    : relative;
+}
+
+.threesector3 {
+    width                     : 5em;
+    height                    : 2.5em;
+    border-bottom-left-radius : 5em;
+    border-bottom-right-radius: 5em;
+    background-color          : var(--icon-background);
+}
+
+.threesector3 i {
+    top        : 45%;
+    color      : var(--icon-three-color);
+    margin-left: 38%;
+    position   : relative;
+}
+
+/* Four actions menu */
+
+.foursector1 {
+    width                 : 2.5em;
+    height                : 2.5em;
+    border-top-left-radius: 5em;
+}
+
+.foursector1 i {
+    top        : 30%;
+    margin-left: 35%;
+    position   : relative;
+    color      : var(--icon-one-color);
+}
+
+.foursector2 {
+    width                  : 2.5em;
+    height                 : 2.5em;
+    border-top-right-radius: 5em;
+}
+
+.foursector2 i {
+    top         : 30%;
+    margin-right: 35%;
+    float       : right;
+    color       : var(--icon-two-color);
+    position    : relative;
+}
+
+.foursector3 {
+    width                    : 2.5em;
+    height                   : 2.5em;
+    border-bottom-left-radius: 5em;
+}
+
+.foursector3 i {
+    top        : 40%;
+    color      : var(--icon-three-color);
+    margin-left: 30%;
+    position   : relative;
+}
+
+.foursector4 {
+    width                     : 2.5em;
+    height                    : 2.5em;
+    border-bottom-right-radius: 5em;
+}
+
+.foursector4 i {
+    top         : 40%;
+    float       : right;
+    margin-right: 35%;
+    position    : relative;
+    color       : var(--icon-four-color);
+}
+
+/* Five actions menu */
+
+.fivesector1 {
+    width                 : 2.5em;
+    height                : 2.5em;
+    border-top-left-radius: 5em;
+
+}
+
+.fivesector1 i {
+    top        : 30%;
+    margin-left: 35%;
+    position   : relative;
+    color      : var(--icon-one-color);
+}
+
+.fivesector2 {
+    width                  : 2.5em;
+    height                 : 2.5em;
+    border-top-right-radius: 5em;
+}
+
+.fivesector2 i {
+    top         : 30%;
+    margin-right: 35%;
+    float       : right;
+    color       : var(--icon-two-color);
+    position    : relative;
+}
+
+.fivesector3 {
+    width                    : 1.66em;
+    height                   : 2.5em;
+    border-bottom-left-radius: 5em;
+}
+
+.fivesector3 i {
+    top        : 35%;
+    color      : var(--icon-three-color);
+    margin-left: 25%;
+    position   : relative;
+}
+
+.fivesector4 {
+    width : 1.66em;
+    height: 2.5em;
+}
+
+.fivesector4 i {
+    top        : 50%;
+    margin-left: 20%;
+    position   : relative;
+    color      : var(--icon-four-color);
+}
+
+.fivesector5 {
+    width                     : 1.66em;
+    height                    : 2.5em;
+    border-bottom-right-radius: 5em;
+}
+
+.fivesector5 i {
+    top         : 35%;
+    float       : right;
+    margin-right: 25%;
+    position    : relative;
+    color       : var(--icon-five-color);
+}
+
+/* Six actions menu */
+
+.sixsector1 {
+    width                 : 1.66em;
+    height                : 2.5em;
+    border-top-left-radius: 5em;
+}
+
+.sixsector1 i {
+    top        : 30%;
+    margin-left: 35%;
+    position   : relative;
+    color      : var(--icon-one-color);
+}
+
+.sixsector2 {
+    width : 1.66em;
+    height: 2.5em;
+}
+
+.sixsector2 i {
+    top        : 10%;
+    margin-left: 25%;
+    color      : var(--icon-two-color);
+    position   : relative;
+}
+
+.sixsector3 {
+    width                  : 1.66em;
+    height                 : 2.5em;
+    border-top-right-radius: 5em;
+}
+
+.sixsector3 i {
+    top        : 35%;
+    color      : var(--icon-three-color);
+    margin-left: 15%;
+    position   : relative;
+}
+
+.sixsector4 {
+    width                    : 1.66em;
+    height                   : 2.5em;
+    border-bottom-left-radius: 5em;
+}
+
+.sixsector4 i {
+    top        : 35%;
+    margin-left: 35%;
+    position   : relative;
+    color      : var(--icon-four-color);
+}
+
+.sixsector5 {
+    width : 1.66em;
+    height: 2.5em;
+}
+
+.sixsector5 i {
+    top        : 50%;
+    margin-left: 20%;
+    position   : relative;
+    color      : var(--icon-five-color);
+}
+
+.sixsector6 {
+    width                     : 1.66em;
+    height                    : 2.5em;
+    border-bottom-right-radius: 5em;
+}
+
+.sixsector6 i {
+    top         : 35%;
+    float       : right;
+    margin-right: 25%;
+    position    : relative;
+    color       : var(--icon-six-color);
+}

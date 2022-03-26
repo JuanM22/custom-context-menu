@@ -1,0 +1,219 @@
+ul {
+    list-style         : none;
+    list-style-position: outside;
+    margin             : 0px;
+    padding            : 0%;
+    margin-bottom      : 10px;
+}
+
+#inside {
+    width           : 2.5em;
+    height          : 2.5em;
+    background-color: white;
+    position        : absolute;
+    border-radius   : 100%;
+    z-index         : 999;
+    margin-top      : 1.45%;
+    margin-left     : 1.45%;
+}
+
+li {
+    padding: 10px;
+}
+
+li:nth-child(odd) {
+    background-color: red;
+}
+
+li:nth-child(even) {
+    background-color: crimson;
+}
+
+#cont {
+    width           : 5em;
+    height          : 5em;
+    background-color: red;
+}
+
+div[id*="test"] {
+    width : inherit;
+    height: inherit;
+}
+
+/* rect(<top>, <right>, <bottom>, <left>)*/
+
+/* 2 sectors */
+
+/* #test1 {
+    border-radius   : 50%;
+    clip            : rect(0, 2.5em, 5em, 0);
+    position        : absolute;
+    background-color: black;
+}
+
+#test2 {
+    border-radius   : 50%;
+    clip            : rect(0px, 5em, 5em, 2.5em);
+    position        : absolute;
+    background-color: blue;
+} */
+
+/* 3 sectors */
+
+/* #test1 {
+    border-radius   : 50%;
+    clip            : rect(0em, 2.5em, 5em, 0em);
+    position        : absolute;
+    background-color: black;
+    transform       : rotate(8deg);
+    z-index         : 2;
+}
+
+#test2 {
+    border-radius   : 50%;
+    clip            : rect(0em, 2.5em, 5em, 0em);
+    position        : absolute;
+    background-color: blue;
+    transform       : rotate(180deg);
+    z-index         : 3;
+}
+
+#test3 {
+    border-radius   : 50%;
+    clip            : rect(0em, 2.5em, 5em, 0em);
+    position        : absolute;
+    background-color: greenyellow;
+    transform       : rotate(270deg);
+    z-index         : 4;
+} */
+
+/* 4 sectors */
+/* #test1 {
+    border-radius   : 50%;
+    clip            : rect(0em, 2.6em, 2.5em, 0em);
+    position        : absolute;
+    background-color: black;
+}
+
+#test2 {
+    border-radius   : 50%;
+    clip            : rect(0em, 5em, 2.5em, 2.5em);
+    position        : absolute;
+    background-color: blue;
+}
+
+#test3 {
+    border-radius   : 50%;
+    clip            : rect(2.5em, 2.6em, 5em, 0em);
+    position        : absolute;
+    background-color: greenyellow;
+}
+
+#test4 {
+    border-radius   : 50%;
+    clip            : rect(2.5em, 5em, 5em, 2.5em);
+    position        : absolute;
+    background-color: violet;
+} */
+
+/* 5 sectors */
+/* #test1 {
+    border-radius   : 50%;
+    clip            : rect(0em, 2.3em, 2.5em, 0em);
+    position        : absolute;
+    background-color: black;
+    transform       : rotate(-10deg);
+    z-index         : 2;
+}
+
+#test2 {
+    border-radius   : 50%;
+    clip            : rect(0em, 2.3em, 2.5em, 0em);
+    position        : absolute;
+    background-color: blue;
+    transform       : rotate(60deg);
+    z-index         : 3;
+}
+
+#test3 {
+    border-radius   : 50%;
+    clip            : rect(0em, 2.3em, 2.5em, 0em);
+    position        : absolute;
+    background-color: greenyellow;
+    transform       : rotate(130deg);
+    z-index         : 4;
+}
+
+#test4 {
+    border-radius   : 50%;
+    clip            : rect(0em, 2.3em, 2.5em, 0em);
+    position        : absolute;
+    background-color: violet;
+    transform       : rotate(200deg);
+    z-index         : 5;
+}
+
+#test5 {
+    border-radius   : 50%;
+    clip            : rect(0em, 2.3em, 2.5em, 0em);
+    position        : absolute;
+    background-color: yellow;
+    transform       : rotate(270deg);
+    z-index         : 6;
+} */
+
+/* 6 sectors */
+
+#test1 {
+    border-radius   : 50%;
+    clip            : rect(0em, 2.3em, 2.5em, 0em);
+    position        : absolute;
+    background-color: black;
+    transform       : rotate(-10deg);
+    z-index         : 2;
+}
+
+#test2 {
+    border-radius   : 50%;
+    clip            : rect(0em, 2.3em, 2.5em, 0em);
+    position        : absolute;
+    background-color: blue;
+    transform       : rotate(60deg);
+    z-index         : 3;
+}
+
+#test3 {
+    border-radius   : 50%;
+    clip            : rect(0em, 2.3em, 2.5em, 0em);
+    position        : absolute;
+    background-color: greenyellow;
+    transform       : rotate(120deg);
+    z-index         : 4;
+}
+
+#test4 {
+    border-radius   : 50%;
+    clip            : rect(0em, 2.3em, 2.5em, 0em);
+    position        : absolute;
+    background-color: violet;
+    transform       : rotate(170deg);
+    z-index         : 5;
+}
+
+#test5 {
+    border-radius   : 50%;
+    clip            : rect(0em, 2.2em, 2.5em, 0em);
+    position        : absolute;
+    background-color: yellow;
+    transform       : rotate(228deg);
+    z-index         : 6;
+}
+
+#test6 {
+    border-radius   : 50%;
+    clip            : rect(0em, 2.3em, 2.5em, 0em);
+    position        : absolute;
+    background-color: blueviolet;
+    transform       : rotate(280deg);
+    z-index         : 3;
+}
