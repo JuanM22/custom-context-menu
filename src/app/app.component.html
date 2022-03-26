@@ -2,13 +2,3 @@
   <li *ngFor="let customer of customerList" (contextmenu)="showContextMenu($event, customer);"
     [id]="'customer' + customer.customerId">{{customer.name}}</li>
 </ul>
-
-<div id="cont">
-  <div id="inside"></div>
-  <div id="test1" onclick="console.log('sector1')"></div>
-  <div id="test2" onclick="console.log('sector2')"></div>
-  <div id="test3" onclick="console.log('sector3')"></div>
-  <div id="test4" onclick="console.log('sector4')"></div> 
-  <div id="test5" onclick="console.log('sector5')"></div> 
-  <div id="test6" onclick="console.log('sector6')"></div> 
-</div>

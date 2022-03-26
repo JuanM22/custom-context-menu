@@ -11,6 +11,8 @@ export class AppComponent {
   constructor(public viewContainerRef: ViewContainerRef, private cfr: ComponentFactoryResolver) {
   }
 
+  itemClass = 'rowSelected';
+
   customerList = [
     {
       customerId: 1,
@@ -65,7 +67,7 @@ export class AppComponent {
     const compoInput = {
       event: event,
       icons: this.icons,
-      theme: 'dark'
+      theme: 'light'
     };
     const customInfo = data;
     this.loadComponent(this.viewContainerRef, compoInput, customInfo);
