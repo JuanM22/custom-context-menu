@@ -2,7 +2,7 @@
     (mousemove)="moveCircleInside($event);" (mouseout)="resetCursorPosition($event);">
     <div id="menuInsideCircle" [style]="insideCircleStyle"></div>
     <div *ngFor="let icon of data.icons; let i = index" [class]="prefix + 'sector'+ (i + 1)" [title]="icon.title"
-        [id]="icon.title">
+        [id]="icon.title" (click)="outPutList[i].emit(customInfo);">
         <i [class]="icon.iconClass"></i>
     </div>
 </div>

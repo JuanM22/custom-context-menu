@@ -17,3 +17,15 @@ li:nth-child(odd) {
 li:nth-child(even) {
     background-color: crimson;
 }
+
+table {
+    width           : 100%;
+    background-color: cyan;
+    text-align      : center;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: brown;
+    color           : white;
+    font-weight     : bold;
+}

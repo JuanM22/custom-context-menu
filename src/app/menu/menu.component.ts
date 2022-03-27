@@ -40,22 +40,9 @@ export class MenuComponent implements OnInit {
     if (this.data.icons.length >= 2 && this.data.icons.length <= 6) {
       this.setTheme();
       this.setClassPrefix();
-      this.connectOutPuts();
-      var rect = this.data.event.target.getBoundingClientRect();
-      this.xCoord = (this.data.event.clientX - rect.left) + 20;
-      this.yCoord = (this.data.event.clientY - rect.top);
+      this.xCoord = this.data.event.clientX + 10;
+      this.yCoord = this.data.event.clientY - 50;
       this.menuPosition = `left:${this.xCoord}px; top:${this.yCoord}px;`;
-    }
-  }
-
-  ngAfterViewInit() {
-    if (this.data.icons.length >= 2 && this.data.icons.length <= 6) {
-      for (let i = 0; i < this.data.icons.length; i++) {
-        let action = this.data.icons[i].title;
-        const container = document.getElementById(action);
-        if (this.data.icons[i].hasParameters) container?.addEventListener('click', () => this.outPutList[i].emit(this.customInfo));
-        else container?.addEventListener('click', () => this.outPutList[i].emit());
-      }
     }
   }
 
@@ -65,13 +52,6 @@ export class MenuComponent implements OnInit {
 
   setClassPrefix(): void {
     this.prefix = this.classPrexixes[this.data.icons.length - 2];
-  }
-
-  connectOutPuts(): void {
-    for (let i = 0; i < this.data.icons.length; i++) {
-      const func: any = this.data.icons[i].callBack;
-      this.outPutList[i].subscribe((res: any) => { func(res); this.close.emit(); });
-    }
   }
 
   moveCircleInside(event: any) {

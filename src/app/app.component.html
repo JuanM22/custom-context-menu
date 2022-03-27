@@ -1,4 +1,29 @@
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nombre</th>
+      <th>Acción</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr *ngFor="let customer of customerList" (contextmenu)="showContextMenu($event, customer);"
+      [id]="'customer' + customer.customerId">
+        <td>{{customer.customerId}}</td>
+        <td>{{customer.name}}</td>
+        <td><button>Click</button></td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+<br>
+
 <ul>
   <li *ngFor="let customer of customerList" (contextmenu)="showContextMenu($event, customer);"
     [id]="'customer' + customer.customerId">{{customer.name}}</li>
 </ul>
+
+<div *ngFor="let customer of customerList" (contextmenu)="showContextMenu($event, customer);">
+    ID: {{customer.customerId}} - Name: {{customer.name}}
+</div>

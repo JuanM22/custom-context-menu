@@ -25,43 +25,53 @@ export class AppComponent {
   ]
 
   icons = [
+    // {
+    //   iconClass: 'fas fa-edit',
+    //   title: 'Editar',
+    // },
+    {
+      iconClass: 'fas fa-paper-plane',
+      title: 'Eliminar',
+    },
     {
       iconClass: 'fas fa-edit',
-      title: 'Editar',
-      hasParameters: true,
-      callBack: this.updateCustomer
+      title: 'Eliminar',
+    },
+    {
+      iconClass: 'fas fa-paper-plane',
+      title: 'Eliminar',
     },
     {
       iconClass: 'fas fa-trash',
       title: 'Eliminar',
-      hasParameters: true,
-      callBack: this.deleteCustomer
     },
     {
-      iconClass: 'fas fa-paper-plane',
-      title: 'Compartir',
-      hasParameters: false,
-      callBack: this.shareInfo
+      iconClass: 'fas fa-trash',
+      title: 'Eliminar',
     },
     {
       iconClass: 'fas fa-redo-alt',
-      title: 'Deshacer',
-      hasParameters: false,
-      callBack: this.reloadInfo
+      title: 'Eliminar',
     },
-    {
-      iconClass: 'fas fa-redo-alt',
-      title: 'Deshacer',
-      hasParameters: false,
-      callBack: this.reloadInfo
-    },
-    {
-      iconClass: 'fas fa-redo-alt',
-      title: 'Deshacer',
-      hasParameters: false,
-      callBack: this.reloadInfo
-    }
+    // {
+    //   iconClass: 'fas fa-paper-plane',
+    //   title: 'Compartir',
+    // },
+    // {
+    //   iconClass: 'fas fa-redo-alt',
+    //   title: 'Deshacer',
+    // },
+    // {
+    //   iconClass: 'fas fa-paper-plane',
+    //   title: 'Compartir',
+    // },
+    // {
+    //   iconClass: 'fas fa-redo-alt',
+    //   title: 'Deshacer',
+    // }
   ]
+
+  message = '';
 
   showContextMenu(event: any, data?: any): boolean {
     const compoInput = {
@@ -74,7 +84,7 @@ export class AppComponent {
     return false;
   }
 
-  async loadComponent(vcr: ViewContainerRef, compoInput: any, customInfo: any) {
+  loadComponent(vcr: ViewContainerRef, compoInput: any, customInfo: any) {
     vcr.clear();
     let component: any = MenuComponent;
     let cmpRef: ComponentRef<any> = vcr.createComponent(this.cfr.resolveComponentFactory(component));
@@ -83,6 +93,12 @@ export class AppComponent {
     cmpRef.instance.customInfo = customInfo;
     // Outputs //
     cmpRef.instance.close.subscribe((_res: any) => this.hideContextMenu());
+    // Setting icon actions //
+    cmpRef.instance.outPut1.subscribe((res: any) => {this.updateCustomer(res); this.hideContextMenu();});
+    cmpRef.instance.outPut2.subscribe((res: any) => {this.deleteCustomer(res); this.hideContextMenu();});
+    cmpRef.instance.outPut3.subscribe((_res: any) => {this.shareInfo(); this.hideContextMenu();});
+    cmpRef.instance.outPut4.subscribe((_res: any) => {this.reloadInfo(); this.hideContextMenu();});
+    //////////////////////////
     return cmpRef;
   }
 
@@ -103,7 +119,7 @@ export class AppComponent {
   }
 
   shareInfo(): void {
-    console.log('Sharing...');
+    console.log(this.message);
   }
 
   reloadInfo(): void {

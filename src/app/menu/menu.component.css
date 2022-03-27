@@ -12,6 +12,13 @@
     box-shadow                : 10px 7px 10px #202020;
 }
 
+.icon {
+    width           : 15px;
+    height          : 15px;
+    background-color: red;
+    position        : absolute;
+}
+
 .menu-dark-theme {
     --icon-background         : #202020;
     --circle-inside-background: #e5e2e2;
@@ -37,18 +44,19 @@ div[class*="menu"] {
 }
 
 i {
-    font-size: 15px;
+    font-size: 15px !important;
+    position : absolute;
 }
 
 #menuInsideCircle {
-    width        : 2.3em;
-    height       : 2.3em;
+    width        : 2em;
+    height       : 2em;
     border-radius: 50%;
     background   : radial-gradient(circle at center, var(--circle-inside-gradient) 5%, var(--circle-inside-background) 45%);
     border       : 1px rgb(109, 107, 107) inset;
     position     : absolute;
-    margin-top   : 25%;
-    margin-left  : 25%;
+    margin-top   : 29%;
+    margin-left  : 29%;
     z-index      : 999;
 }
 
@@ -72,9 +80,8 @@ div[class*="sector"]:hover {
 }
 
 .twosector1 i {
-    top        : 40%;
-    margin-left: 5%;
-    position   : relative;
+    margin-top : 39%;
+    margin-left: 5.5%;
     color      : var(--icon-one-color);
 }
 
@@ -83,11 +90,9 @@ div[class*="sector"]:hover {
 }
 
 .twosector2 i {
-    top         : 40%;
-    float       : right;
-    margin-right: 5%;
-    position    : relative;
-    color       : var(--icon-two-color);
+    margin-top : 39%;
+    margin-left: 76%;
+    color      : var(--icon-two-color);
 }
 
 /* Three actions menu */
@@ -99,9 +104,8 @@ div[class*="sector"]:hover {
 }
 
 .threesector1 i {
-    margin-top : 25%;
-    margin-left: 8%;
-    position   : absolute;
+    margin-top : 24%;
+    margin-left: 10%;
     color      : var(--icon-one-color);
 }
 
@@ -112,9 +116,8 @@ div[class*="sector"]:hover {
 }
 
 .threesector2 i {
-    margin-top : 56%;
+    margin-top : 58%;
     margin-left: 10%;
-    position   : absolute;
     color      : var(--icon-two-color);
     transform  : rotate(180deg);
 }
@@ -126,10 +129,9 @@ div[class*="sector"]:hover {
 }
 
 .threesector3 i {
-    margin-top : 38%;
-    margin-left: 5%;
+    margin-top : 41.5%;
+    margin-left: 6%;
     color      : var(--icon-three-color);
-    position   : relative;
     transform  : rotate(90deg);
 }
 
@@ -140,9 +142,8 @@ div[class*="sector"]:hover {
 }
 
 .foursector1 i {
-    top        : 13.5%;
-    margin-left: 13%;
-    position   : relative;
+    margin-top : 14.5%;
+    margin-left: 16%;
     color      : var(--icon-one-color);
 }
 
@@ -151,11 +152,9 @@ div[class*="sector"]:hover {
 }
 
 .foursector2 i {
-    top         : 15%;
-    margin-right: 14.5%;
-    float       : right;
-    color       : var(--icon-two-color);
-    position    : relative;
+    margin-top : 15%;
+    margin-left: 64.5%;
+    color      : var(--icon-two-color);
 }
 
 .foursector3 {
@@ -163,10 +162,9 @@ div[class*="sector"]:hover {
 }
 
 .foursector3 i {
-    top        : 69%;
+    margin-top : 66.5%;
+    margin-left: 16%;
     color      : var(--icon-three-color);
-    margin-left: 14%;
-    position   : relative;
 }
 
 .foursector4 {
@@ -174,41 +172,37 @@ div[class*="sector"]:hover {
 }
 
 .foursector4 i {
-    top         : 69%;
-    float       : right;
-    margin-right: 15%;
-    position    : relative;
-    color       : var(--icon-four-color);
+    margin-top : 66.5%;
+    margin-left: 65.5%;
+    color      : var(--icon-four-color);
 }
 
 /* Five actions menu */
 
 .fivesector1 {
     clip     : rect(0em, 2.3em, 2.5em, 0em);
-    transform: rotate(-8deg);
+    transform: rotate(-10deg);
     z-index  : 2;
 }
 
 .fivesector1 i {
-    margin-top : 17%;
-    margin-left: 12%;
-    position   : relative;
+    margin-top : 19.5%;
+    margin-left: 13%;
     color      : var(--icon-one-color);
-    transform  : rotate(8deg);
+    transform  : rotate(10deg);
 }
 
 .fivesector2 {
     clip     : rect(0em, 2.3em, 2.5em, 0em);
-    transform: rotate(60deg);
+    transform: rotate(59deg);
     z-index  : 3;
 }
 
 .fivesector2 i {
-    margin-top : 22%;
-    margin-left: 10%;
-    position   : relative;
+    margin-top : 24%;
+    margin-left: 11%;
     color      : var(--icon-two-color);
-    transform  : rotate(-60deg);
+    transform  : rotate(-59deg);
 }
 
 .fivesector3 {
@@ -218,22 +212,20 @@ div[class*="sector"]:hover {
 }
 
 .fivesector3 i {
-    position   : relative;
-    margin-top : 25%;
-    margin-left: 9.5%;
+    margin-top : 21%;
+    margin-left: 11%;
     color      : var(--icon-three-color);
     transform  : rotate(-120deg);
 }
 
 .fivesector4 {
-    clip     : rect(0em, 2.5em, 2.5em, 0em);
+    clip     : rect(0em, 2.5em, 2.3em, 0em);
     transform: rotate(180deg);
     z-index  : 5;
 }
 
 .fivesector4 i {
-    position   : relative;
-    margin-top : 13%;
+    margin-top : 16%;
     margin-left: 15%;
     color      : var(--icon-four-color);
     transform  : rotate(-180deg);
@@ -246,9 +238,8 @@ div[class*="sector"]:hover {
 }
 
 .fivesector5 i {
-    position   : relative;
-    margin-top : 16%;
-    margin-left: 10%;
+    margin-top : 15%;
+    margin-left: 16%;
     color      : var(--icon-five-color);
     transform  : rotate(-270deg);
 }
@@ -256,85 +247,79 @@ div[class*="sector"]:hover {
 /* Six actions menu */
 
 .sixsector1 {
-    clip     : rect(0em, 2.3em, 2.5em, 0em);
-    transform: rotate(-10deg);
-    z-index  : 2;
+    clip            : rect(0em, 2.3em, 2.5em, 0em);
+    transform       : rotate(-10deg);
+    z-index         : 2;
 }
 
 .sixsector1 i {
-    position   : relative;
-    margin-top : 14.5%;
-    margin-left: 14%;
+    margin-top : 16%;
+    margin-left: 14.5%;
     color      : var(--icon-one-color);
     transform  : rotate(10deg);
 }
 
 .sixsector2 {
-    clip     : rect(0em, 2.3em, 2.5em, 0em);
-    transform: rotate(60deg);
-    z-index  : 3;
+    clip            : rect(0em, 2.3em, 2.5em, 0em);
+    transform       : rotate(60deg);
+    z-index         : 3;
 }
 
 .sixsector2 i {
-    position   : relative;
-    margin-top : 22.5%;
-    margin-left: 9.5%;
+    margin-top : 24%;
+    margin-left: 11%;
     color      : var(--icon-two-color);
     transform  : rotate(-60deg);
 }
 
 .sixsector3 {
-    clip     : rect(0em, 2.3em, 2.5em, 0em);
-    transform: rotate(120deg);
-    z-index  : 4;
+    clip            : rect(0em, 2.3em, 2.5em, 0em);
+    transform       : rotate(120deg);
+    z-index         : 4;
 }
 
 .sixsector3 i {
-    position   : relative;
-    margin-top : 26%;
-    margin-left: 8.5%;
+    margin-top : 25%;
+    margin-left: 9%;
     color      : var(--icon-three-color);
     transform  : rotate(-120deg);
 }
 
 .sixsector4 {
-    clip     : rect(0em, 2.3em, 2.5em, 0em);
-    transform: rotate(170deg);
-    z-index  : 5;
+    clip            : rect(0em, 2.3em, 2.5em, 0em);
+    transform       : rotate(170deg);
+    z-index         : 5;
 }
 
 .sixsector4 i {
-    position   : relative;
-    margin-top : 21%;
+    margin-top : 22%;
     margin-left: 10%;
     color      : var(--icon-four-color);
     transform  : rotate(-170deg);
 }
 
 .sixsector5 {
-    clip     : rect(0em, 2.2em, 2.5em, 0em);
-    transform: rotate(228deg);
-    z-index  : 6;
+    clip            : rect(0em, 2.2em, 2.5em, 0em);
+    transform       : rotate(230deg);
+    z-index         : 6;
 }
 
 .sixsector5 i {
-    position   : relative;
-    margin-top : 16%;
-    margin-left: 12.5%;
+    margin-top : 17%;
+    margin-left: 14%;
     color      : var(--icon-five-color);
-    transform  : rotate(-228deg);
+    transform  : rotate(-230deg);
 }
 
 .sixsector6 {
     clip     : rect(0em, 2.3em, 2.5em, 0em);
-    transform: rotate(280deg);
+    transform: rotate(285deg);
     z-index  : 3;
 }
 
 .sixsector6 i {
-    position   : relative;
-    margin-top : 9%;
-    margin-left: 18.5%;
+    margin-top : 12%;
+    margin-left: 20%;
     color      : var(--icon-six-color);
-    transform  : rotate(-280deg);
+    transform  : rotate(-285deg);
 }
